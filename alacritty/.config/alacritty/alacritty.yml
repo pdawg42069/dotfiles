@@ -1,0 +1,7 @@
+font:
+  size: 14
+
+mouse_bindings:
+  - { mouse: Right, action: Paste }
+window:
+  opacity: 0.9
