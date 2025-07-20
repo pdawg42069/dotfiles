@@ -3,10 +3,6 @@
 -- Add any additional options here
 vim.opt.mouse = ""
 vim.opt.wrap = true
-<<<<<<< HEAD
 vim.o.updatetime = 50 -- Default is 300-400ms, a lower value can make UI feel faster
 vim.o.redrawtime = 500 -- Default is 2000ms, adjust as needed
 vim.g.snacks_animate = false
-=======
-vim.g.snacks_animate = true
->>>>>>> e440a37a1adfb8ea3ba175aea3460484278835c8
