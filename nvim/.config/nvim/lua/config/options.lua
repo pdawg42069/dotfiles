@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.opt.mouse = ""
 vim.opt.wrap = true
+vim.g.snacks_animate = true
