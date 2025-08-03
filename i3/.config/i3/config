@@ -237,9 +237,9 @@ bindsym $mod+F5 exec --no-startup-id brightnessctl set +5%
 
 
 gaps inner 4
-gaps outer 3
+gaps outer 4
 
-default_border pixel 3
+default_border pixel 5
 #hide_edge_borders smart
 
 
