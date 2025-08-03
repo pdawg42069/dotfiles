@@ -236,8 +236,8 @@ bindsym $mod+F5 exec --no-startup-id brightnessctl set +5%
 #bindsym XF86MonBrightnessUpexec --no-startup-id brightnessctl set 10%-       #increase brightness 10% 
 
 
-# gaps inner 4
-# gaps outer 3
+gaps inner 4
+gaps outer 3
 
 default_border pixel 3
 #hide_edge_borders smart
@@ -251,8 +251,8 @@ bindsym $mod+Shift+s exec flameshot gui
 
 bindsym $mod+shift+i exec i3lock
 
-# exec_always --no-startup-id nitrogen --restore
-# exec --no-startup-id i3-msg workspace 1
+exec_always --no-startup-id nitrogen --restore
+exec --no-startup-id i3-msg workspace 1
 
 # class                 border  backgr. text    indicator child_border
 # client.focused          #08a124 #285577 #ffffff #2e9ef4   #08a124
