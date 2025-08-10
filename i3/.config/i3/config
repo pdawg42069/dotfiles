@@ -213,7 +213,7 @@ exec --no-startup-id i3-msg 'exec flameshot'
 #exec --no-startup-id i3-msg 'exec volumeicon'
 exec --no-startup-id i3-msg 'workspace 1; exec alacritty'
 exec --no-startup-id i3-msg 'workspace 2; exec firefox'
-#exec --no-startup-id i3-msg 'workspace 3; exec signal-desktop'
+exec --no-startup-id i3-msg 'workspace 3; exec signal-desktop'
 exec --no-startup-id i3-msg 'workspace 4; exec gnome-terminal -e btop '
 
 assign [class="Alacritty"] 1
@@ -253,4 +253,5 @@ bindsym $mod+shift+i exec i3lock
 
 exec_always --no-startup-id nitrogen --restore
 exec --no-startup-id i3-msg workspace 1
+exec --no-startup-id numlockx 
 
