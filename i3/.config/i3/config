@@ -94,7 +94,7 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+c split h 
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $modi+shift+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -235,6 +235,8 @@ bindsym $mod+F5 exec --no-startup-id brightnessctl set +5%
 #bindsym XF86MonBrightnessDownexec --no-startup-id brightnessctl set 10%-       #decrease brightness 10% 
 #bindsym XF86MonBrightnessUpexec --no-startup-id brightnessctl set 10%-       #increase brightness 10% 
 
+# Lauch greenclip clipboard history
+bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 gaps inner 3
 gaps outer 3
@@ -254,4 +256,4 @@ bindsym $mod+shift+i exec i3lock
 exec_always --no-startup-id nitrogen --restore
 exec --no-startup-id i3-msg workspace 1
 exec --no-startup-id numlockx 
-
+exec --no-startup-id greenclip daemon
