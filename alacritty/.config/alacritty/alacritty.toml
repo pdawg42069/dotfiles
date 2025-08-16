@@ -1,0 +1,11 @@
+[[mouse.bindings]]
+action = "Paste"
+mouse = "Right"
+
+[font]
+size = 14
+
+[window]
+opacity = 0.9
+
+[mouse]
