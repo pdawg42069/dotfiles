@@ -5,13 +5,14 @@
   "spacing" : 0,
   "modules-left": [
   "hyprland/workspaces",
-  "cpu",
-  "memory"
+  "custom/uptime",
+  "cpu"
   ],
 
   "modules-center": ["clock"],
 
   "modules-right": [
+    "custom/pomodoro",
     "bluetooth",
     "network",
     "pulseaudio", 
@@ -41,10 +42,20 @@
     "tooltip-format-connected":"{device_enumerate}"
   },
 
-  "clock": {
-    "timezone": "Canada/Atlantic",
+  "custom/music": {
+    "format": "  {}",
+    "escape": true,
+    "interval": 5,
     "tooltip": false,
-    "format": "{:%H:%M  -  %m/%d/%Y}",
+    "exec": "playerctl metadata --format='{{ artist }} - {{ title }}'",
+    "on-click": "playerctl play-pause",
+    "max-length": 50
+  },
+
+  "clock": {
+    "timezone": "Asia/Kolkata",
+    "tooltip": false,
+    "format": "{:%H:%M:%S  -  %A, %d}",
     "interval": 1
   },
 
@@ -54,7 +65,7 @@
     "format-disconnected": "󰤠 ",
     "interval": 5,
     "tooltip-format": "{essid} ({signalStrength}%)",
-    "on-click": "iwgtk"
+    "on-click": "nm-connection-editor"
 
  },
 
@@ -62,13 +73,21 @@
     "interval": 1,
     "format": "  {icon0}{icon1}{icon2}{icon3} {usage:>2}%",
     "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
-    "on-click": "alacritty -e htop"
+    "on-click": "ghostty -e htop"
   },
 
   "memory": {
     "interval": 30,
     "format": "  {used:0.1f}G/{total:0.1f}G",
     "tooltip-format": "Memory"
+  },
+
+  "custom/uptime": {
+    "format": "{}",
+    "format-icon": [""], 
+    "tooltip": false,
+    "interval": 1600,
+    "exec": "$HOME/.config/waybar/scripts/uptime.sh"
   },
   
   "backlight": {
@@ -102,7 +121,20 @@
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
   },
- 
+  
+  "custom/lock": {
+  "tooltip": false,
+  "on-click": "sh -c '(sleep 0s; hyprlock)' & disown",
+  "format" : ""
+  },
+
+  "custom/pomodoro": {
+	"format": "{}",
+	"return-type": "json",
+	"exec": "waybar-module-pomodoro --no-work-icons",
+	"on-click": "waybar-module-pomodoro toggle",
+	"on-click-right": "waybar-module-pomodoro reset",
+  },
 
 }
 
