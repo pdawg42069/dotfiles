@@ -46,7 +46,8 @@
     // "timezone": "Canada/Eastern",
     "format": "{:%H:%M  -  %m/%d/%Y}",
     "interval": 1,
-    "on-click": "gsimplecal",
+    // "on-click": "gsimplecal",
+    "on-click": "GDK_SCALE=2 gsimplecal --geometry=800x600",
     "tooltip": "clock/calendar",
     "tooltip-format": "<tt><big>{calendar}</big></tt>",
         "calendar": {
