@@ -46,12 +46,11 @@
     // "timezone": "Canada/Eastern",
     "format": "{:%H:%M  -  %m/%d/%Y}",
     "interval": 1,
-    // "on-click": "gsimplecal",
-    "on-click": "GDK_SCALE=2 gsimplecal --geometry=800x600",
+    "on-click": "gsimplecal",
     "tooltip": "clock/calendar",
     "tooltip-format": "<tt><big>{calendar}</big></tt>",
         "calendar": {
-            "mode": "month",
+            "mode": "year",
             "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
             }
     // "on-click": "gsimplecal"
