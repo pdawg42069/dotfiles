@@ -50,7 +50,7 @@
     "tooltip": "clock/calendar",
     "tooltip-format": "<tt><big>{calendar}</big></tt>",
         "calendar": {
-            "mode": "year",
+            "mode": "month",
             "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
             }
     // "on-click": "gsimplecal"
