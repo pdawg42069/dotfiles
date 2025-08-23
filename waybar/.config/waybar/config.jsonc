@@ -7,7 +7,8 @@
   "modules-left": [
   "hyprland/workspaces",
   "cpu",
-  "memory"
+  "memory",
+  "disk"
   ],
 
   "modules-center": ["clock"],
@@ -79,7 +80,16 @@
     "tooltip-format": "Memory",
     "on-click": "foot -F htop --sort-key=PERCENT_MEM"
   },
-  
+
+  "disk": {
+	  "interval": 30,
+	  "format": " {percentage_used}%",
+    "tooltip": "disk",
+    "tooltip-format": "{specific_free:0.2f}GB/{specific_total:0.2f}GB",
+	  "unit": "GB",
+    "on-click": "baobab"
+  },
+
   "backlight": {
         "format": "{icon}  {percent}%",
         "format-icons": ["","󰃜", "󰃛", "󰃞","󰃝","󰃟","󰃠"],
