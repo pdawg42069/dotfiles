@@ -65,13 +65,17 @@
 }
 
 /* Simple Hover effects for individual left modules - BRIGHTER COLOR */
-#custom-uptime:hover,
+
 #cpu:hover {
   background-color: rgb(41, 42, 53); /* Brighter highlight */
 }
+
 #memory:hover {
   background-color: rgb(41, 42, 53); /* Brighter highlight */
+}
 
+#disk:hover {
+  background-color: rgb(41, 42, 53); /* Brighter highlight */
 }
 
 #workspaces button {
