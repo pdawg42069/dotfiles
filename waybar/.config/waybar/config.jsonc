@@ -47,14 +47,8 @@
     // "timezone": "Canada/Eastern",
     "format": "{:%H:%M  -  %m/%d/%Y}",
     "interval": 1,
-    "on-click": "gsimplecal",
+    "on-click": "gnome-calendar",
     "tooltip": "clock/calendar",
-    "tooltip-format": "<tt><big>{calendar}</big></tt>",
-        "calendar": {
-            "mode": "month",
-            "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
-            }
-    // "on-click": "gsimplecal"
   },
 
   "network": {
