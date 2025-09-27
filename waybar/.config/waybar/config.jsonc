@@ -48,7 +48,6 @@
     "format": "{:%H:%M  -  %m/%d/%Y}",
     "interval": 1,
     "on-click": "gnome-calendar",
-    "tooltip": "clock/calendar",
   },
 
   "network": {
